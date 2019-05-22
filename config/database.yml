@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: giphy-search_development
+  database: advice-search_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: giphy-search_test
+  database: advice-search_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: giphy-search_production
-  username: giphy-search
-  password: <%= ENV['GIPHY-SEARCH_DATABASE_PASSWORD'] %>
+  database: advice-search_production
+  username: advice-search
+  password: <%= ENV['ADVICE-SEARCH_DATABASE_PASSWORD'] %>

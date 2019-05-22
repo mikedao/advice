@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Giphy Search</title>
+    <title>Advice Search</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
@@ -11,14 +11,14 @@
   <body>
     <nav class="navbar navbar-default" role="navigation">
       <div class="navbar-header">
-        <%= link_to "Giphy Search", root_path, class: "navbar-brand" %>
+        <%= link_to "Advice Search", root_path, class: "navbar-brand" %>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <%= form_tag :search, method: :get, class: "form-inline" do %>
             <div class="form-group search-field">
               <%= text_field_tag(:q) %>
-              <%= submit_tag "Search", class: "btn btn-primary" %>
+              <%= submit_tag "Find Advice", class: "btn btn-primary" %>
             </div>
           <% end %>
         </ul>
