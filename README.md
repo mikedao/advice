@@ -10,7 +10,7 @@ and press the "Find Advice" button,
 I will see three results.
 Each result will have advice and a slip id.
 
-I should also see a random piece of advice at the bttom
+I should also see a random piece of advice at the bottom
 ```
 
 
